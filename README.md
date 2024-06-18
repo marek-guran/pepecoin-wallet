@@ -1,3 +1,22 @@
+# Create key
+```shell
+keytool -genkey -v -keystore release-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias your-key-alias
+```
+# Local properties should look then like this
+```properties
+sdk.dir=C:\\Users\\skemg\\AppData\\Local\\Android\\sdk
+flutter.sdk=C:\\Flutter\\flutter
+flutter.buildMode=release
+flutter.versionName=5.2.0
+flutter.versionCode=8
+
+minSdkVersion=21
+targetSdkVersion=34
+keyAlias=key
+keyPassword=pass
+storeFile=C:\\AndroidStudioProjects\\pepecoin-wallet\\mrt_wallet\\release-key.jks
+storePassword=pass
+```
 # About MRT Wallet
 
 Welcome to MRT Wallet, the open-source wallet designed for the decentralized future of finance. Our mission is to empower users with a secure and versatile solution that supports both Bitcoin mainnet and testnet, as well as networks such as
