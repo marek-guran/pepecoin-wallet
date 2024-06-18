@@ -29,6 +29,8 @@ class BlockchainAddressUtils {
         addr = BitcoinAddress(address, network: network).baseAddress;
       } else if (network is DogecoinNetwork) {
         addr = DogeAddress(address, network: network).baseAddress;
+      } else if (network is PepecoinNetwork) {
+        addr = PepeAddress(address, network: network).baseAddress;
       } else if (network is DashNetwork) {
         addr = DashAddress(address, network: network).baseAddress;
       } else if (network is LitecoinNetwork) {

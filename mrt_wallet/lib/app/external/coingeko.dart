@@ -30,6 +30,7 @@ class CoinGeckoUtils {
         "Ethereum": "ethereum",
         "Polygon": "matic-network",
         "BNB Smart Chain": "binancecoin",
+        "Pepecoin": "pepecoin-network",
         "Tron": "tron"
       };
   static String? getCoinGeckoCurrencyId(String tokenName) {

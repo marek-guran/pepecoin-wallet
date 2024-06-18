@@ -121,6 +121,8 @@ class AppBitcoinNetwork extends AppNetworkImpl {
         return [Bip44Coins.bitcoinSv];
       case 4:
         return [Bip44Coins.dash, Bip49Coins.dash];
+      case 69:
+        return [Bip44Coins.pepecoin, Bip49Coins.pepecoin];
       default:
         throw UnimplementedError();
     }

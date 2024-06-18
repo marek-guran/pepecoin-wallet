@@ -21,6 +21,11 @@ class ApiProviderService with Equatable, CborSerializable {
     "https://www.blockcypher.com/",
     ProviderProtocol.http,
   );
+  static const ApiProviderService pepeExplorer = ApiProviderService(
+    "BlockCypher",
+    "https://www.pepeexlorer.com/",
+    ProviderProtocol.http,
+  );
   static const ApiProviderService mempool = ApiProviderService(
       "Mempool", "https://mempool.space/", ProviderProtocol.http);
   static const ApiProviderService xrpl = ApiProviderService(

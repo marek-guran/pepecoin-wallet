@@ -96,6 +96,17 @@ class _DefaultAppCoins {
           decimal: 8,
           assetLogo: "assets/image/doge.png"),
       providers: []);
+  static final BitcoinParams pepecoinMainnet = BitcoinParams(
+      transactionExplorer:
+          "https://pepeexplorer.com/api/getrawtransaction?txid=#txid/",
+      addressExplorer: "https://pepeexplorer.com/ext/getaddress/#address/",
+      transacationNetwork: PepecoinNetwork.mainnet,
+      token: Token(
+          name: "Pepecoin",
+          symbol: "₱",
+          decimal: 8,
+          assetLogo: "assets/image/pepe.png"),
+      providers: []);
   static final BitcoinParams bsvMainnet = BitcoinParams(
       transactionExplorer: "https://whatsonchain.com/tx/#txid",
       addressExplorer: "https://whatsonchain.com/address/#address",
@@ -554,6 +565,7 @@ class ChainUtils {
     34: APPSolanaNetwork(34, _DefaultAppCoins.solanaTestnet),
     50: APPCardanoNetwork(50, _DefaultAppCoins.cardano),
     51: APPCardanoNetwork(51, _DefaultAppCoins.cardanoTestnet),
+    69: AppBitcoinNetwork(69, _DefaultAppCoins.pepecoinMainnet),
     100: APPEVMNetwork(100, _DefaultAppCoins.ethreumMainnet),
     101: APPEVMNetwork(101, _DefaultAppCoins.ethreumTestnet),
     102: APPEVMNetwork(102, _DefaultAppCoins.polygon),
