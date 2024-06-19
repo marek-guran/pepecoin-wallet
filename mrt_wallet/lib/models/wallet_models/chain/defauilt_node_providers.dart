@@ -195,6 +195,24 @@ class DefaultNodeProviders {
           websiteUri: "blockfrost.io",
           projectId: "preprodMVwzqm4PuBDBSfEULoMzoj5QZcy5o3z5")
     ],
+    69: <ApiProviderService>[
+      ElectrumApiProviderService(
+          serviceName: "142.202.48.124:33874",
+          websiteUri: "142.202.48.124:33874",
+          url: "wss://142.202.48.124:33874",
+          protocol: ProviderProtocol.websocket),
+      ElectrumApiProviderService(
+          serviceName: "193.203.12.61:50859",
+          websiteUri: "193.203.12.61:50859",
+          url: "wss://193.203.12.61:50859",
+          protocol: ProviderProtocol.websocket),
+      ElectrumApiProviderService(
+          serviceName: "52.55.155.188:33874",
+          websiteUri: "52.55.155.188:33874",
+          url: "wss://52.55.155.188:33874",
+          protocol: ProviderProtocol.websocket),
+      ApiProviderService.pepeExplorer
+    ],
     100: <ApiProviderService>[
       EVMApiProviderService(
         serviceName: "publicnode",
